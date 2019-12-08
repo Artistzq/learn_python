@@ -2,35 +2,17 @@
 # !/usr/bin/env python
 
 import numpy as np
-from enum import Enum
-from typing import List
-from operator import attrgetter
-import copy
-
-
-class Direction(Enum):
-    UP = 1
-    Down = 2
-    LEFT = 3
-    RIGHT = 4
+from typing import List, Optional
 
 
 class State(object):
     """
-    表示状态结点的类
+    格局状态类
     """
 
-    ORDER: int
-    ERROR_ARRAY: np.ndarray
-    CORRECT_ARRAY: np.ndarray
-
-    ORDER = 3
-    ERROR_ARRAY = np.zeros((3, 3), np.int8)
-    CORRECT_ARRAY = np.array([[1, 2, 3], [4, 0, 5], [6, 7, 8]])
-
-    @classmethod
-    def set_order(cls, order):
-        cls.ORDER = order
+    ORDER = 3  # type: int
+    ERROR_ARRAY = np.zeros((3, 3), np.int8)  # type: np.ndarray
+    CORRECT_ARRAY = np.array([[1, 2, 3], [4, 0, 5], [6, 7, 8]])  # type: np.ndarray
 
     def __init__(self, state_array: np.ndarray, f=0, g=0, h=0):
         """
@@ -47,26 +29,16 @@ class State(object):
         self.state_array = state_array
         # 估价函数f = g + h
         self.f = f
-        # g(x)实际代价
+        # g(x)实际代价，此属性的信息从父结点得到（父结点g值+1）
         self.g = g
         # h(x)估价代价
         self.h = h
         # 父状态结点
-        self.father = None  # type: State
+        self.father = None  # type: (State, Optional)
 
     def set_g(self, g):
-        """设置g的值"""
         self.g = g
         self.f = self.g + self.h
-
-    def set_h(self, h):
-        """设置h的值"""
-        self.h = h
-        self.f = self.g + self.h
-
-    def get_f(self) -> int:
-        """返回f=g+h的估价函数值"""
-        return self.g + self.h
 
     def set_father(self, father):
         """
@@ -77,22 +49,12 @@ class State(object):
         """
         self.father = father
 
-    def calculate_g(self, start_state):
-        """
-        计算g值
-        Args:
-            start_state (State):
-        """
-
-        pass
-
     def calculate_h_1(self, end_state):
         """
         计算到end_state的估计代价
         方法1：估价函数是该状态格局域目的格局位置不符的数码数目
         Args:
             end_state (State):
-        Returns:
         """
         count = 0
         for x, y in zip(np.nditer(self.state_array), np.nditer(end_state.state_array)):
@@ -101,13 +63,11 @@ class State(object):
         self.h = count
         self.f = self.g + self.h
 
-    def calculate_f(self, start_state, end_state, method=1):
+    def calculate_f(self, end_state, method = 1):
         """
         Args:
             method (int):
-            start_state (State):
             end_state (State):
-        Returns:
         """
         if method == 1:
             self.calculate_h_1(end_state)
@@ -136,10 +96,12 @@ class State(object):
         return False, State(State.ERROR_ARRAY)
 
     def display_array(self):
+        """显示该状态的数码格局"""
         print(self.state_array)
         print()
 
     def display_info(self):
+        """显示该状态的数码格局，f，g，h值，和其父状态的数码格局，f，g，h值"""
         print(self.state_array)
         print(self.f, self.g, self.h)
         print("father is: ")
@@ -152,20 +114,12 @@ class State(object):
 
 
 class Operation(object):
-    """操作算子"""
-
-    @classmethod
-    def get_zero_coord_in(cls, current_state: State) -> list:
-        """
-        返回传入状态的数组中的0（空格）坐标，坐标[x,y]形式，最终状态的为[2, 2]
-        """
-        coord = np.where(current_state.state_array == 0)
-        return [coord[0][0] + 1, coord[1][0] + 1]
+    """操作算子类"""
 
     @classmethod
     def get_zero_index_in(cls, current_state: State) -> list:
         """
-        返回传入状态的数组中的0（空格）的索引，为坐标值-1，索引 [x,y]形式，最终状态的为[1, 1]
+        返回传入状态的数组中的0（空格）的索引，为[x,y]形式，正确状态的为[1, 1]
         """
         index = np.where(current_state.state_array == 0)
         return [index[0][0], index[1][0]]
@@ -247,24 +201,6 @@ class Operation(object):
         return child_states
 
     @staticmethod
-    def find_min_f_from(states):
-        """
-        找到状态表中第一个f值最小的状态
-        Args:
-            states (List[State]):
-
-        Returns (State):
-
-        """
-        # 表非空
-        if states:
-            min_state = states[0]
-            for state in states:
-                if state.f < min_state.f:
-                    min_state = state
-            return min_state
-
-    @staticmethod
     def display_full_info_of(a_state):
         """
             state (State):
@@ -276,55 +212,16 @@ class Operation(object):
 
 
 if __name__ == "__main__":
-    a = State(np.arange(State.ORDER ** 2).reshape(State.ORDER, State.ORDER))
-    aa = State(np.array([1, 2, 3, 4, 5, 6, 0, 7, 8]).reshape(State.ORDER, State.ORDER))
-    a.calculate_f(aa, State(State.CORRECT_ARRAY))
-    a.display_info()
-    State(State.CORRECT_ARRAY).display_info()
-
-    a.calculate_f(aa, State(State.CORRECT_ARRAY), 1)
-    a.display_info()
-    State(State.CORRECT_ARRAY).display_info()
-
-    # a = State(np.array([1,2,3,4,5,6,0,7,8]).reshape(State.ORDER, State.ORDER))
-    # a = State(State.CORRECT_ARRAY)
-    # a_child_list = Operation.get_all_next_state(a)
-    # for state in a_child_list:
-    #     Operation.display_full_info_of(state)
-    # aa_list = Operation.get_all_next_state(a_child_list[0])
-    # for state in aa_list:
-    #     Operation.display_full_info_of(state)
-
-    # b = State(State.CORRECT_ARRAY, 10)
-    # c = State(State.ERROR_ARRAY, 8)
-    # d = State(np.array([[1, 2, 3], [4, 0, 5], [6, 7, 8]]), 9)
+    a = State(State.CORRECT_ARRAY)
 
     # 测试单方向移动
-    # b = State(np.array([[1, 0, 2], [3, 4, 5], [6, 7, 8]]))
-    # b.display_info()
-    #     # g = Operation.move_down(b)
-    #     # g.display_info()
+    b = State(np.array([[1, 0, 2], [3, 4, 5], [6, 7, 8]]))
+    b.display_info()
+    c = Operation.move_down(b)
+    c.display_info()
 
-    # print(id(b),id(c))
-    # open_l = [b, c, d]
-    # for i in open_l:
-    #     i.display_info()
-    #
-    # open_l.sort(key=attrgetter("f"), reverse=True)
-    # for i in open_l:
-    #     i.display_info()
+    # 测试生成子状态列表
+    a_child_list = Operation.get_all_next_state(a)
+    for state in a_child_list:
+        Operation.display_full_info_of(state)
 
-    # exist_open, same_state_open = d.array_is_exist_in(open_l)
-    # e = c # type: # State
-    # print(id(e), id(c), id(open_l[1]))
-    # open_l.remove(c)
-    # print(id(e), id(c), id(open_l[1]))
-    # e.display_array()
-
-    # e.display_array()
-
-    # if exist_open:
-    #     print("local's d", id(b))
-    #     print(exist_open)
-    #     print("same's id" ,id(same_state_open))
-    #     # same_state_open.display_array()

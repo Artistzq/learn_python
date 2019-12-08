@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92ab22b8-5314-421f-851e-4c58ce04d8c1" name="Default Changelist" comment="" />
+    <list default="true" id="92ab22b8-5314-421f-851e-4c58ce04d8c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/state.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +19,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/state.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/solution.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/state.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1UcXVs0XKHsg4h74hCY2Ge811Nf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,9 +35,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.solution">
+  <component name="RunManager" selected="Python.state">
     <configuration name="solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AStar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.solution" />
         <item itemvalue="Python.state" />
+        <item itemvalue="Python.solution" />
       </list>
     </recent_temporary>
   </component>
@@ -124,22 +135,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="834" y="386" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1575684333887" />
-    <state width="1867" height="350" key="GridCell.Tab.0.bottom" timestamp="1575812084443">
+    <state width="534" height="930" key="GridCell.Tab.0.bottom" timestamp="1575815722732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1867" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575812084443" />
-    <state width="1867" height="350" key="GridCell.Tab.0.center" timestamp="1575812084443">
+    <state width="534" height="930" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575815722732" />
+    <state width="534" height="930" key="GridCell.Tab.0.center" timestamp="1575815722732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1867" height="350" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575812084443" />
-    <state width="1867" height="350" key="GridCell.Tab.0.left" timestamp="1575812084442">
+    <state width="534" height="930" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575815722732" />
+    <state width="534" height="930" key="GridCell.Tab.0.left" timestamp="1575815722732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1867" height="350" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575812084442" />
-    <state width="1867" height="350" key="GridCell.Tab.0.right" timestamp="1575812084443">
+    <state width="534" height="930" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575815722732" />
+    <state width="534" height="930" key="GridCell.Tab.0.right" timestamp="1575815722732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1867" height="350" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575812084443" />
+    <state width="534" height="930" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575815722732" />
     <state width="1867" height="350" key="GridCell.Tab.1.bottom" timestamp="1575812084444">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -160,10 +171,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="129" y="88" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575739645612" />
-    <state x="563" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1575804899988">
+    <state x="563" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1575812579338">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="563" y="322" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575804899988" />
+    <state x="563" y="322" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575812579338" />
+    <state x="697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575812987120">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575812987120" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1575739735710">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
