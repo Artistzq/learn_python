@@ -55,7 +55,7 @@ class Solution(object):
             self.open_list.append(self.start_state)
             self.start_state.calculate_f(self.end_state, method)
             while self.open_list:
-                sss = time.clock()
+                # sss = time.clock()
                 self.current_state = self.open_list.pop()
                 self.count += 1
                 if self.current_state.array_equal_to(self.end_state):
@@ -83,14 +83,15 @@ class Solution(object):
                             self.close_list.remove(same_state_close)
                 self.close_list.append(self.current_state)
                 self.open_list.sort(key=attrgetter("f"), reverse=True)
-                if self.count % 500 == 0:
-                    print("搜索了", self.count, "个结点")
-                    print("open 表长：", len(self.open_list))
-                    print("close 表长：", len(self.close_list))
-                    print()
-                rrr = time.clock()
-                ttt = rrr - sss
-                print(ttt)
+                if self.count % 400 == 0:
+                    # print("搜索了", self.count, "个结点")
+                    # print("open 表长：", len(self.open_list))
+                    # print("close 表长：", len(self.close_list))
+                    # print()
+                    print(".\n.\n.")
+                # rrr = time.clock()
+                # ttt = rrr - sss
+                # print(ttt, "    ", len(child_list))
             # open表空也没找到
             print("异常：open表空未搜索到解")
             return

@@ -4,6 +4,7 @@
 import numpy as np
 from typing import List, Optional
 from enum import Enum
+import time
 
 
 class Direction(Enum):
@@ -237,7 +238,7 @@ class Operation(object):
             else:
                 return None
         elif direction == Direction.LEFT:
-            if y != 0: # 如果空格不在最左列，就可以往左移
+            if y != 0:  # 如果空格不在最左列，就可以往左移
                 temp_state.state_array[x][y], temp_state.state_array[x][y - 1] \
                     = temp_state.state_array[x][y - 1], temp_state.state_array[x][y]
                 temp_state.set_father(current_state)
@@ -275,7 +276,7 @@ class Operation(object):
             if child_state is not None:
                 if father_state.father is None:  # 如果是初始节点（父节点为空）
                     child_states.append(child_state)
-                else:                            # 否则要判断重不重复（比如往下移动又往上移动）
+                else:  # 否则要判断重不重复（比如往下移动又往上移动）
                     if direction != father_state.last_direction_from:
                         child_states.append(child_state)
         return child_states
@@ -290,6 +291,7 @@ class Operation(object):
                 min_f = state_list[index].f
                 min_f_index = index
         state_list[min_f_index], state_list[-1] = state_list[-1], state_list[min_f_index]
+
 
 if __name__ == "__main__":
     a = State(State.CORRECT_ARRAY)
@@ -315,3 +317,28 @@ if __name__ == "__main__":
     t[0], t[1] = t[1], t[0]
     t[-1], t[-1] = t[-1], t[-1]
     print(t)
+
+    # 测试numpy复制速度, 还是对象.copy最快
+    # start = time.perf_counter()
+    #
+    # temp_array = np.zeros((3,3), np.int8)
+    # np.copyto(temp_array, a.state_array)
+    #
+    # end = time.perf_counter()
+    # print(temp_array, end - start)
+    #
+    #
+    # start = time.perf_counter()
+    #
+    # temp_b = a.state_array.copy()
+    #
+    # end = time.perf_counter()
+    # print(temp_b, end - start)
+    #
+    #
+    # start = time.perf_counter()
+    #
+    # temp_c = np.copy(a.state_array)
+    #
+    # end = time.perf_counter()
+    # print(temp_c, end - start)
