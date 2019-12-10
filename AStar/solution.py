@@ -83,11 +83,13 @@ class Solution(object):
                             self.close_list.remove(same_state_close)
                 self.close_list.append(self.current_state)
                 self.open_list.sort(key=attrgetter("f"), reverse=True)
+                # Operation.min_sort(self.open_list)
                 if self.count % 400 == 0:
-                    # print("搜索了", self.count, "个结点")
-                    # print("open 表长：", len(self.open_list))
-                    # print("close 表长：", len(self.close_list))
-                    # print()
+                    print("搜索了", self.count, "个结点")
+                    print(self.current_state.f)
+                    print("open 表长：", len(self.open_list))
+                    print("close 表长：", len(self.close_list))
+                    print()
                     print(".\n.\n.")
                 # rrr = time.clock()
                 # ttt = rrr - sss
