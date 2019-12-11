@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92ab22b8-5314-421f-851e-4c58ce04d8c1" name="Default Changelist" comment="">
+    <list default="true" id="57a9b815-1f21-49d3-8272-be923183872a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/AStar-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AStar-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-EightNum/AStar_java/src/app/Eight.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-EightNum/AStar_java/src/app/Eight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/solution.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/state.py" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProjectId" id="1UcXVs0XKHsg4h74hCY2Ge811Nf" />
+  <component name="ProjectId" id="1UnacEUs7zGUHiJP45mwkJKcJlq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,53 +27,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.solution (1)">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="AStar-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="solution (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AStar-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AStar-python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AStar-python/solution.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AStar-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,75 +52,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="state" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AStar-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/state.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="AStar-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="AStar-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="AStar-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.solution (1)" />
         <item itemvalue="Python.solution" />
-        <item itemvalue="Python.state" />
       </list>
     </recent_temporary>
   </component>
@@ -190,93 +75,58 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="92ab22b8-5314-421f-851e-4c58ce04d8c1" name="Default Changelist" comment="" />
-      <created>1575656883215</created>
+      <changelist id="57a9b815-1f21-49d3-8272-be923183872a" name="Default Changelist" comment="" />
+      <created>1575994890644</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575656883215</updated>
+      <updated>1575994890644</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="115" key="#Inspections" timestamp="1575702645450">
+    <state x="680" y="237" key="FileChooserDialogImpl" timestamp="1575995144297">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="452" y="115" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1575702645450" />
-    <state x="200" y="88" width="1016" height="907" key="#Intentions" timestamp="1575698425058">
+    <state x="680" y="237" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1575995144297" />
+    <state width="614" height="930" key="GridCell.Tab.0.bottom" timestamp="1575995171454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="200" y="88" width="1016" height="907" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1575698425058" />
-    <state x="414" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575700983920">
+    <state width="614" height="930" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575995171454" />
+    <state width="614" height="930" key="GridCell.Tab.0.center" timestamp="1575995171450">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="414" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575700983920" />
-    <state x="439" y="344" width="529" height="376" key="#com.intellij.tools.ToolEditorDialog" timestamp="1575895145805">
+    <state width="614" height="930" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575995171450" />
+    <state width="614" height="930" key="GridCell.Tab.0.left" timestamp="1575995171450">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="439" y="344" width="529" height="376" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895145805" />
-    <state width="1757" height="582" key="DebuggerActiveHint" timestamp="1575898297851">
+    <state width="614" height="930" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575995171450" />
+    <state width="614" height="930" key="GridCell.Tab.0.right" timestamp="1575995171454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1757" height="582" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1575898297851" />
-    <state x="834" y="386" key="FileChooserDialogImpl" timestamp="1575684333887">
+    <state width="614" height="930" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575995171454" />
+    <state width="1894" height="351" key="GridCell.Tab.1.bottom" timestamp="1575995038598">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="834" y="386" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1575684333887" />
-    <state width="606" height="930" key="GridCell.Tab.0.bottom" timestamp="1575972942613">
+    <state width="1894" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575995038598" />
+    <state width="1894" height="351" key="GridCell.Tab.1.center" timestamp="1575995038598">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="606" height="930" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575972942613" />
-    <state width="606" height="930" key="GridCell.Tab.0.center" timestamp="1575972942613">
+    <state width="1894" height="351" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575995038598" />
+    <state width="1894" height="351" key="GridCell.Tab.1.left" timestamp="1575995038598">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="606" height="930" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575972942613" />
-    <state width="606" height="930" key="GridCell.Tab.0.left" timestamp="1575972942613">
+    <state width="1894" height="351" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575995038598" />
+    <state width="1894" height="351" key="GridCell.Tab.1.right" timestamp="1575995038598">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="606" height="930" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575972942613" />
-    <state width="606" height="930" key="GridCell.Tab.0.right" timestamp="1575972942613">
+    <state width="1894" height="351" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575995038598" />
+    <state x="385" y="98" key="SettingsEditor" timestamp="1575995158474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="606" height="930" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575972942613" />
-    <state width="1867" height="369" key="GridCell.Tab.1.bottom" timestamp="1575903205743">
+    <state x="385" y="98" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575995158474" />
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1576026499062">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1867" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575903205743" />
-    <state width="1867" height="369" key="GridCell.Tab.1.center" timestamp="1575903205743">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1867" height="369" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575903205743" />
-    <state width="1867" height="369" key="GridCell.Tab.1.left" timestamp="1575903205743">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1867" height="369" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575903205743" />
-    <state width="1867" height="369" key="GridCell.Tab.1.right" timestamp="1575903205743">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1867" height="369" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575903205743" />
-    <state x="129" y="88" key="SettingsEditor" timestamp="1575895146350">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="129" y="88" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575895146350" />
-    <state x="563" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1575973528536">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="563" y="322" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575973528536" />
-    <state x="697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575812987120">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575812987120" />
-    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1575900894430">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575900894430" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="self.open_list[1]" />
-      </configuration>
-    </watches-manager>
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576026499062" />
   </component>
 </project>

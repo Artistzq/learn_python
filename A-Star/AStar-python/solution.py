@@ -72,15 +72,19 @@ class Solution(object):
                         child_state.calculate_f(self.end_state, method)
                         self.open_list.append(child_state)
                     elif in_open_list:
-                        if child_state.f < same_state_open.f:
-                            child_state.calculate_f(self.end_state, method)
-                            same_state_open.update_info(child_state)
+                        # A*算法不需要判断存在的情况，若有重复无需操作，第一次找到的就是最短路径
+                        pass
+                        # if child_state.f < same_state_open.f:
+                        #     child_state.calculate_f(self.end_state, method)
+                        #     same_state_open.update_info(child_state)
                     elif in_close_list:
-                        if child_state.f < same_state_close.f:
-                            child_state.calculate_f(self.end_state, method)
-                            same_state_close.update_info(child_state)
-                            self.open_list.append(same_state_close)
-                            self.close_list.remove(same_state_close)
+                        pass
+                        # A*算法不需要判断存在的情况，若有重复无需操作，第一次找到的就是最短路径
+                        # if child_state.f < same_state_close.f:
+                        #     child_state.calculate_f(self.end_state, method)
+                        #     same_state_close.update_info(child_state)
+                        #     self.open_list.append(same_state_close)
+                        #     self.close_list.remove(same_state_close)
                 self.close_list.append(self.current_state)
                 self.open_list.sort(key=attrgetter("f"), reverse=True)
                 # Operation.min_sort(self.open_list)

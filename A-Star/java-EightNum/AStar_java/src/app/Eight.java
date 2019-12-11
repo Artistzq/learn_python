@@ -71,7 +71,6 @@ class Solution {
             startState.CalculateF(endState, 2);
             openList.add(startState);
             while (openList.size() != 0) {
-                Collections.sort(openList, Collections.reverseOrder());
                 currentState = openList.get(openList.size() - 1);
                 openList.remove(openList.size() - 1);
                 count++;
@@ -89,30 +88,10 @@ class Solution {
                         childState.CalculateF(endState, 2);
                         openList.add(childState);
                     }
-                    else if (existOpen) {
-                        if (childState.getF() < openList.get(positionOpen[0]).getF()) {
-                            childState.CalculateF(endState, 2);
-                            openList.get(positionOpen[0]).UpdateInfo(childState);
-                        }
-                    }
-                    else {
-                        if (childState.getF() < closeList.get(positionClose[0]).getF()) {
-                            childState.CalculateF(endState, 2);
-                            State sameInClose = closeList.get(positionClose[0]);
-                            sameInClose.UpdateInfo(childState);
-                            openList.add(sameInClose);
-                            closeList.remove(sameInClose);
-                        }
-                    }
                     closeList.add(currentState);
+                Collections.sort(openList, Collections.reverseOrder());
                     // Operation.MinSort(openList);
                 }
-                // if (count % 500 == 0) {
-                //     System.out.println("搜索了"+count+"个节点");
-                //     System.out.println("f：" + currentState.f);
-                //     System.out.println("open表长：" + openList.size());
-                //     System.out.println("close表长：" + closeList.size());
-                // }
             }
             System.out.println("异常，open表空无解");
             return;
