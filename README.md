@@ -6,4 +6,3 @@
 4. [卷积网络可视化](./jupyter/neural_application/卷积网络可视化.ipynb)
 5. [单词向量化](./jupyter/neural_application/单词向量化.ipynb)
 6. [猫狗识别](./jupyter/neural_application/cat_dog_recog.ipynb)
-7. [双线性插值法缩放图片](./Image%20Processing/Bilinear%20Interpolation/resize.py)
